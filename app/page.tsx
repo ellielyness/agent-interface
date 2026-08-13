@@ -30,7 +30,7 @@ export default function Home() {
             conversationId = userMessage.content.slice(4);
         }
 
-        const res = await fetch("http://localhost:9503/prompt", {
+        const res = await fetch("http://localhost:9500/prompt", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
